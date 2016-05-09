@@ -87,7 +87,7 @@ class ApplicationFrame extends JFrame{
         BorderPane borderPane = new BorderPane();
         webComponent = new WebView();
 
-        webComponent.getEngine().load("http://google.com/");
+        webComponent.getEngine().load("pathtofile");
 
         borderPane.setCenter(webComponent);
         Scene scene = new Scene(borderPane,450,450);
