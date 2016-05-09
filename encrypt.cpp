@@ -21,31 +21,17 @@ namespace OpenBrowser
                              this.axWebBrowser1 = new AxSHDocVw.AxWebBrowser();
                              ((System.ComponentModel.ISupportInitialize)(this.axWebBrowser1)).BeginInit();
                              this.SuspendLayout();
- 
-                             //
-                             // browseButton
-                             //
- 
+
                              this.browseButton.Location = new System.Drawing.Point(8, 8);
                              this.browseButton.Name = "browseButton";
                              this.browseButton.TabIndex = 1;
                              this.browseButton.Text = "Browse";
                              this.browseButton.Click += new System.EventHandler(this.browseButton_Click);
- 
-                             //
-                             // axWebBrowser1
-                             //
- 
                              this.axWebBrowser1.Enabled = true;
                              this.axWebBrowser1.Location = new System.Drawing.Point(10, 40);
                              this.axWebBrowser1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWebBrowser1.OcxState")));
                              this.axWebBrowser1.Size = new System.Drawing.Size(980, 808);
                              this.axWebBrowser1.TabIndex = 6;
- 
-                             //
-                             // WebPage
-                             //
- 
                              this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
                              this.ClientSize = new System.Drawing.Size(292, 266);
                              this.Controls.Add(this.browseButton);
@@ -56,10 +42,6 @@ namespace OpenBrowser
                              this.ResumeLayout(false);
                     }
  
-                    /// <summary>
-                    /// The main entry point for the application.
-                    /// </summary>
- 
                     [STAThread]
                     static void Main()
                     {
@@ -67,16 +49,8 @@ namespace OpenBrowser
                     }
                     private void browseButton_Click(object sender, System.EventArgs e)
                     {
-                             // Use Following code with version 2.0
                              axWebBrowser1.Navigate(pathtofile);
-                             // Use Following code with version 1.1
-                             //System.Object nullObject = 0;
-                             //string str = "";
-                             //System.Object nullObjStr = str;
-                             //Cursor.Current = Cursors.WaitCursor;
-                             //axWebBrowser1.Navigate(@"pathtofile",ref nullObject, ref 
                              nullObjStr, ref nullObjStr, ref nullObjStr);
-                             //Cursor.Current = Cursors.Default;
                              }
           }
 }
